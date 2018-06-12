@@ -3,6 +3,7 @@ html {
   background-color: lightgrey;
   height: 100%;
   font-family: "Raleway", sans-serif;
+  overflow: hidden;
 }
 
 .hero-image {
