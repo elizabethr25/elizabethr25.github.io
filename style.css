@@ -37,6 +37,7 @@ html {
 
 .about-me-main {
   background-color: white;
+  font-family: 'Dawning of a New Day', cursive;
   height: 70%;
   width: 80%;
   margin-bottom: 8%;
@@ -125,5 +126,6 @@ span {
 .projects:nth-child(odd) {
   float: right;
 }
+
 
 
