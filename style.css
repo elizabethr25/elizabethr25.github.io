@@ -1,34 +1,24 @@
 body,
 html {
-  background-color: lightgrey;
   height: 100%;
   font-family: "Dawning of a New Day", cursive;
   overflow: hidden;
-}
-
-.main {
-  background-color: white;
-  width: 95%;
-  height: 95%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
+  background-image: url("./assets/images/book-botanical-cactus-403571.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }
 
 #nameHeader {
   text-align: center;
-  font-size: 125px;
-  padding-top: 4px;
+  font-size: 100px;
+  margin-top: 15px;
 }
 
 ul.link-menu li {
   list-style: none;
   width: auto;
   display: inline-block;
-  margin-bottom: 15px;
 }
 
 ul {
@@ -36,10 +26,18 @@ ul {
 }
 
 a {
-  font-size: 50px;
+  font-size: 45px;
   padding-left: 20px;
   padding-right: 20px;
   color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+.photoDiv {
+  margin-top: 30px;
 }
 
 .about-me-image {
@@ -47,7 +45,7 @@ a {
 }
 
 p {
-  font-family: 'Handlee', cursive;
+  font-family: "Handlee", cursive;
 }
 
 .about-me-main {
@@ -60,6 +58,9 @@ p {
   margin-right: auto;
 }
 
+.fa-linkedin {
+  font-size: 100px;
+}
 
 
 

@@ -17,6 +17,8 @@
         crossorigin="anonymous"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -25,45 +27,23 @@
 </head>
 
 <body>
-
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="/aboutme.html">about me</a>
-        <a href="/projects.html">projects</a>
-        <a href="/connect.html">connect</a>
-    </div>
-
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-
-    <div class="proj-container">
-        <section class="main-section">
-        <div class="projects">
-            <p>project 1</p>
+    <div class="main">
+        <h1 id="nameHeader">elizabeth richardson</h1>
+        <div id="header-menu">
+            <ul class="link-menu">
+                <li>
+                    <a href="./index.html">home</a>
+                </li>
+                <li>
+                    <a href="./projects.html">projects</a>
+                </li>
+                <li>
+                    <a href="./connect.html">connect</a>
+                </li>
+            </ul>
         </div>
-
-        <div class="projects">
-            <p>project 2</p>
-        </div>
-
-        <div class="projects">
-            <p>project 3</p>
-        </div>
-
-        <div class="projects">
-            <p>project 4</p>
-        </div>
-    </section>
     </div>
 
 </body>
-
-<script>
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-    }
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-    }
-</script>
 
 </html>
