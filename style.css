@@ -2,7 +2,13 @@ body,
 html {
   height: 100%;
   font-family: "Dawning of a New Day", cursive;
-  overflow: hidden;
+  /* overflow: hidden; */
+  
+  background-color: #ecebe9;
+}
+
+.aboutMe {
+  height: 100%;
   background-image: url("./assets/images/book-botanical-cactus-403571.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -58,9 +64,26 @@ p {
   margin-right: auto;
 }
 
-.fa-linkedin {
-  font-size: 100px;
+hr {
+  border: 0;
+  height: 1px;
+  background:black;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
+
+#emr-photo {
+  height: 500px;
+}
+
+.icon {
+  display: flex;
+  justify-content: space-between;
+  font-size: 100px;
+  margin-top: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
 
 
 
