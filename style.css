@@ -18,8 +18,8 @@ p {
 .content-wrapper {
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  /* flex-direction: column; */
+  justify-content: space-around;
   align-items: center;
   text-align: center;
   padding-top: 50px;
@@ -30,8 +30,20 @@ p {
   position: relative;
 }
 
+.writing {
+  align-items: center;
+}
 
+.myPhoto {
+  height: 500px;
+  justify-content: flex-end;
+  margin: 25px;
+}
 
+.about-me-P {
+  font-size: 30px;
+  padding: 10px
+}
 
 .hamburger {
   position: absolute;
