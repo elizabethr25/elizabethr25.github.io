@@ -1,13 +1,10 @@
-// $(document).ready(function(){
-
-// function open() {
-//     document.getElementById("sidebar").style.width = "250px";
-//     console.log("clicked");
-// }
-
-// function close() {
-//     document.getElementById("sidebar").style.width = "0";
-//     console.log("clicked");
-// }
-
-// });
+$(document).ready(function() {
+  $("#offCanvas").on("click", function() {
+    $(".nav-offcanvas").addClass("open");
+    $(".offcanvas-overlay").addClass("on");
+  });
+  $("#offCanvasClose, .offcanvas-overlay").on("click", function() {
+    $(".nav-offcanvas").removeClass("open");
+    $(".offcanvas-overlay").removeClass("on");
+  });
+});

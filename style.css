@@ -1,89 +1,143 @@
-body,
-html {
-  height: 100%;
+body {
+  position: relative;
   font-family: "Dawning of a New Day", cursive;
+  margin: 0;
   /* overflow: hidden; */
-  
-  background-color: #ecebe9;
 }
 
-.aboutMe {
-  height: 100%;
-  background-image: url("./assets/images/book-botanical-cactus-403571.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-}
-
-#nameHeader {
-  text-align: center;
+h1 {
   font-size: 100px;
-  margin-top: 15px;
-}
-
-ul.link-menu li {
-  list-style: none;
-  width: auto;
-  display: inline-block;
-}
-
-ul {
-  text-align: center;
-}
-
-a {
-  font-size: 45px;
-  padding-left: 20px;
-  padding-right: 20px;
   color: black;
-}
-
-a:hover {
-  color: black;
-}
-
-.photoDiv {
-  margin-top: 30px;
-}
-
-.about-me-image {
-  height: 30%;
 }
 
 p {
-  font-family: "Handlee", cursive;
+  font-size: 50px;
+  color: black;
 }
 
-.about-me-main {
-  text-align: center;
-}
-
-.about-me-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-hr {
-  border: 0;
-  height: 1px;
-  background:black;
-  background-image: linear-gradient(to right, #ccc, #333, #ccc);
-}
-
-#emr-photo {
-  height: 500px;
-}
-
-.icon {
+.content-wrapper {
+  height: 100vh;
   display: flex;
-  justify-content: space-between;
-  font-size: 100px;
-  margin-top: 50px;
-  margin-left: 20%;
-  margin-right: 20%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("./assets/images/book-botanical-cactus-403571.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
+.hamburger {
+  position: absolute;
+  z-index: 3000;
+  left: 20px;
+  top: 20px;
+  cursor: pointer;
+}
 
+.hamburger i {
+  font-size: 25px;
+  color: black;
+}
 
+.hamburger i:hover {
+  transition: .3s ease;
+  transform: scale(1.25);
+}
 
+.nav-offcanvas {
+  width: 300px;
+  background: black;
+  height: 100vh;
+  position: fixed;
+  overflow-x: auto;
+  z-index: 2000;
+  padding: 50px 0;
+  top: 0;
+  left: -300px;
+  transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.nav-offcanvas .close {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  outline: 0;
+  opacity: 1;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  transition: .3s ease;
+}
+.nav-offcanvas .close i {
+  font-size: 15px;
+  color:lightgrey;
+  text-shadow: none;
+}
+.nav-offcanvas .close:hover {
+  transform: scale(1.5);
+}
+.nav-offcanvas-menu ul {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.nav-offcanvas-menu ul li a {
+  color:lightgrey;
+  font-size: 50px;
+  font-weight: 300;
+  padding: 10px 40px;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+  transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.05s;
+}
+.nav-offcanvas-menu ul li a:hover {
+  text-decoration: underline;
+  transition: .3s ease;
+  transform: scale(1.1);
+}
+
+.nav-offcanvas.open {
+  position: fixed;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.offcanvas-overlay {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1999;
+  transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  visibility: hidden;
+  opacity: 0;
+}
+.offcanvas-overlay.on {
+  opacity: 1;
+  visibility: visible;
+}
+
+div.icon {
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+div.icon a i {
+  color: lightgrey;
+  font-size: 45px;
+}
+
+i:hover {
+  transition: .3s ease;
+  transform: scale(1.222);
+}

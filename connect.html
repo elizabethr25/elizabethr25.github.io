@@ -25,52 +25,33 @@
     <link href="https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
 
     <title>elizabeth richardson | connect </title>
 
 </head>
 
 <body>
-    <div class="main">
-        <h1 id="nameHeader">elizabeth richardson</h1>
-        <div id="header-menu">
-            <ul class="link-menu">
-                <li>
-                    <a href="./index.html">home</a>
-                </li>
-                <li>
-                    <a href="./projects.html">projects</a>
-                </li>
-                <li>
-                    <a href="./connect.html">connect</a>
-                </li>
-            </ul>
-        </div>
-    </div>
 
-    <hr>
+    <!-- sidenav div -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./index.html">about me</a>
+        <a href="./projects.html">projects</a>
+        <a href="./connect.html">connect</a>
 
-    
-        <div class="container">
-            <div class="row">
-            <div class="col-sm-6">
-                <img src="./assets/images/placeholder-me.jpg" id="emr-photo" alt="elizabeth richardson photo">
-            </div>
-            <div class="col-sm-6">
-                Here will go the email link box
-            </div>
-        </div>
-        </div>
-
-
+        <!-- icon section needs editing -->
         <div class="icon">
             <i class="fab fa-linkedin"></i>
             <i class="fab fa-stack-overflow"></i>
             <i class="fab fa-github-square"></i>
             <i class="fab fa-instagram"></i>
         </div>
-    
+
+    </div>
+
+    <!-- hamburger -->
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
 </body>
 
