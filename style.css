@@ -141,3 +141,13 @@ i:hover {
   transition: .3s ease;
   transform: scale(1.222);
 }
+
+/* paralax */
+
+.paralax {
+  background-color: black;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
