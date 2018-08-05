@@ -19,15 +19,19 @@ p {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
+  padding-top: 50px;
   background-image: url("./assets/images/book-botanical-cactus-403571.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
+
+
+
 
 .hamburger {
   position: absolute;
