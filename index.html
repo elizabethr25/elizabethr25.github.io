@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <!-- uncompressed jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
@@ -48,13 +49,13 @@
         <div class="nav-offcanvas-menu">
             <ul>
                 <li>
-                    <a href="#">about me</a>
+                    <a id="about-me-link" href="#">about me</a>
                 </li>
                 <li>
-                    <a href="#">projects</a>
+                    <a id="project-link" href="#" >projects</a>
                 </li>
                 <li>
-                    <a href="#">connect</a>
+                    <a id="connect-link" href="#" >connect</a>
                 </li>
             </ul>
         </div>
@@ -79,7 +80,7 @@
     <div class="offcanvas-overlay"></div>
     <!-- Main page content -->
     <div class="content-wrapper">
-        <div class- "writing">
+        <div class= "writing">
             <h1 class="headerName">
                 elizabeth richardson
             </h1>
@@ -87,30 +88,27 @@
                 aspiring junior web dev
             </p>
             <p class="about-me-P">Hello, my name is Elizabeth Richardson! I am a graduate of The University of Arizona with a degree in Marketing,
-                    Class of 2014. </p>
-                <p class="about-me-P"> I am very excited to learn different programming languages, database management, and the basics for building
-                    apps. In my free time I like to read, cook, and travel the world!</p>
+                Class of 2014. </p>
+            <p class="about-me-P"> I am very excited to learn different programming languages, database management, and the basics for building
+                apps. In my free time I like to read, cook, and travel the world!</p>
         </div>
         <img class="myPhoto" src="./assets/images/placeholder-me.jpg" alt="">
     </div>
 
-    <!-- <div class="paralax">
-            <div class="main">
-                    <div class="container">
-                        <div class="about-me-main">
-                            <img class="about-me-image" src="/assets/images/placeholder-me.jpg">
-                            <p>hello, i am cool</p>
-                            <p>Hello, my name is Elizabeth Richardson! I am a graduate of The University of Arizona with a degree in Marketing,
-                                Class of 2014. I am currently taking the University of Arizona's Continuing Education Coding Bootcamp
-                                to become a Web Developer. </p>
-                            <p>I worked for over three years as an Account Executive in the logistics industry managing client shipping
-                                needs. I enjoyed working in this industry but I am ready for my next challenge.</p>
-                            <p> I am very excited to learn different programming languages, database management, and the basics for building
-                                apps. In my free time I like to read, cook, and travel the world!</p>
-                        </div>
-                    </div>
-                </div>
-    </div> -->
+    <div class="main">
+        <div class="container">
+            <div class="about-me-main">
+                <p>Hello, my name is Elizabeth Richardson! I am a graduate of The University of Arizona with a degree in Marketing,
+                    Class of 2014. I am currently taking the University of Arizona's Continuing Education Coding Bootcamp
+                    to become a Web Developer. </p>
+                <p>I worked for over three years as an Account Executive in the logistics industry managing client shipping
+                    needs. I enjoyed working in this industry but I am ready for my next challenge.</p>
+                <p> I am very excited to learn different programming languages, database management, and the basics for building
+                    apps. In my free time I like to read, cook, and travel the world!</p>
+            </div>
+        </div>
+    </div>
+    </div>
 
 
 
