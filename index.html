@@ -35,17 +35,25 @@
 </head>
 
 <body>
-
-    <!-- Hamburger to Pop open side nav -->
-    <a id="offCanvas" class="hamburger">
-        <i class="fas fa-bars"></i>
-    </a>
-
-    <!-- Navbar Navigation Starts -->
+    <nav>
+        <!-- Hamburger to pop open side nav -->
+        
+        <a id="offCanvas" class="hamburger">
+            <i class="fas fa-bars"></i>
+        </a>
+        <header>Elizabeth Richardson</header>
+        
+    </nav>
+    
+    <!-- Side nav structure -->
     <div class="nav-offcanvas">
+
+        <!-- Button to close side nav -->
         <button type="button" class="close" id="offCanvasClose" aria-label="Close">
             <i class="fas fa-times"></i>
         </button>
+
+        <!-- Side nav scrolling menu -->
         <div class="nav-offcanvas-menu">
             <ul>
                 <li>
@@ -60,6 +68,7 @@
             </ul>
         </div>
 
+        <!-- Side nav bottom icons -->
         <div class="icon">
             <a target="_blank" href="https://www.linkedin.com/in/elizabethrichardson2/">
                 <i class="fab fa-linkedin"></i>
@@ -74,35 +83,31 @@
                 <i class="fab fa-instagram"></i>
             </a>
         </div>
+    </div>
 
-    </div>
-    <!-- Right side overlay -->
+    <!-- Right side page overlay -->
     <div class="offcanvas-overlay"></div>
+
+
     <!-- Main page content -->
+    <!-- change these classes to be main-content-wrapper, projects-content-wrapper, and connect-content-wrapper (see if they can all be the same class) -->
     <div class="content-wrapper">
-        <div class="writing">
-            <h1 class="headerName">
-                elizabeth richardson
-            </h1>
-            <!-- <p>
-                aspiring junior web dev
-            </p> -->
-            <p class="about-me-P">Hello! I am a graduate of The University of Arizona with a degree in Marketing,
-                Class of 2014. </p>
-            <p class="about-me-P"> I am very excited to learn different programming languages, database management, and the basics for building
-                apps. In my free time I like to read, cook, and travel the world!</p>
-        </div>
-        <img class="myPhoto" src="./assets/images/placeholder-me.jpg" alt="">
+        <p class="about-me-P">
+            Hi! My name is Elizabeth Richardson and I am a graduate of The University of Arizona with a degree in Marketing, Class of
+            2014 and The University of Arizona Full Stack Web Development Coding Bootcamp.
+        </p>
+        <!-- <img class="myPhoto" src="./assets/images/placeholder-me.jpg" alt=""> -->
     </div>
-    <hr>
+
+    <!-- Project/ work experience area  -->
     <div class="projects">
         <h1>Projects and Work Experience</h1>
     </div>
-    <hr>
-    <div class="main">
+
+    <!-- Connect with me area -->
+    <div class="connect">
         <h1>Connect with me</h1>
     </div>
-
 
 
 </body>
