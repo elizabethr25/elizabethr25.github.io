@@ -1,65 +1,35 @@
+/* * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+} */
+
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
   font-family: "Dawning of a New Day", cursive;
   margin: 0;
   background-color: white;
-}
-
-
-
-/* About me page styling  ===================================================== */
-
-.content-wrapper {
-  height: 100vh;
-  display: flex;
-  justify-content: space-between;
-
   border-left: 15px solid black;
   border-right: 15px solid black;
   border-bottom: 15px solid black;
 
-
 }
 
-p {
-  font-size: 35px;
-  color: black;
-  font-family: 'Handlee', cursive;
-}
+/* Navbar and Hamburger styling ===================================================== */
 
-.about-me-P {
-   width: 50%;
-  font-size: 30px;
-   padding: 50px; 
-  margin: auto; 
-}
-
-.myPhoto {
-width: 50%;
-height: auto;
-}
-
-/* Hamburger styling ===================================================== */
-
-nav {
+.nav {
   display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
+  clear: both;
   width: 100%;  
   border-top: 15px solid black;
-
 }
 
 .hamburger {
   cursor: pointer;
-  position: fixed;
+position: fixed;
   left: 30px;
-}
-
-.hamburger i {
   font-size: 25px;
   color: black;
 }
@@ -153,6 +123,32 @@ header {
   visibility: visible;
 }
 
+/* About me page styling  ===================================================== */
+
+.content-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 125px;
+  
+}
+
+p {
+  font-size: 35px;
+  color: black;
+  font-family: 'Handlee', cursive;
+}
+
+.about-me-P {
+   width: 50%;
+  font-size: 30px;
+   padding: 50px; 
+}
+
+.myPhoto {
+height: 90vh;
+}
+
 /* Icon styling ===================================================== */
 
 div.icon {
@@ -178,10 +174,9 @@ i:hover {
   height: 100vh;
   display: flex;
   justify-content: center;
+  padding-top: 125px;
 
-  border-style: solid;
-  border-color: black;
-  border-width: 15px;
+
 }
 
 
@@ -191,10 +186,14 @@ i:hover {
   height: 100vh;
   display: flex;
   justify-content: center;
+  padding-top: 125px;
 
-  border-style: solid;
-  border-color: black;
-  border-width: 15px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 
