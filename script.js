@@ -1,3 +1,5 @@
+"use strict";
+
 $(document).ready(function() {
   // Navbar movement
   $("#offCanvas").on("click", function() {
@@ -34,11 +36,13 @@ $(document).ready(function() {
     console.log("clicked");
     $("html,body").animate(
       {
-        scrollTop: $(".main").offset().top
+        scrollTop: $(".connect").offset().top
       },
       "slow"
     );
   });
+
+ 
 
   // const scrollTo = (where, speed) => {
   //   const position = $(where).offset().top;
