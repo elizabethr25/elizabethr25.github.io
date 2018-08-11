@@ -1,58 +1,62 @@
 body {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: "Dawning of a New Day", cursive;
   margin: 0;
-  /* overflow: hidden; */
+  background-color: white;
 }
 
-h1 {
-  font-size: 15vh;
-  color: black;
-}
 
-p {
-  font-size: 50px;
-  color: black;
-  font-family: 'Handlee', cursive;
-}
+
+/* About me page styling  ===================================================== */
 
 .content-wrapper {
   height: 100vh;
   display: flex;
-  /* flex-direction: column; */
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  /* padding-top: 50px;
-  background-image: url("./assets/images/book-botanical-cactus-403571.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative; */
+  justify-content: space-between;
+
+  border-left: 15px solid black;
+  border-right: 15px solid black;
+  border-bottom: 15px solid black;
+
+
 }
 
-.writing {
-  align-items: center;
-}
-
-.myPhoto {
-  height: 90vh;
-  justify-content: flex-end;
-  margin: 25px;
+p {
+  font-size: 35px;
+  color: black;
+  font-family: 'Handlee', cursive;
 }
 
 .about-me-P {
+   width: 50%;
   font-size: 30px;
-  padding: 10px;
-  margin-right: 75px;
+   padding: 50px; 
+  margin: auto; 
+}
+
+.myPhoto {
+width: 50%;
+height: auto;
+}
+
+/* Hamburger styling ===================================================== */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;  
+  border-top: 15px solid black;
+
 }
 
 .hamburger {
-  position: fixed;
-  z-index: 3000;
-  left: 20px;
-  top: 20px;
   cursor: pointer;
+  position: fixed;
+  left: 30px;
 }
 
 .hamburger i {
@@ -64,6 +68,12 @@ p {
   transition: .3s ease;
   transform: scale(1.25);
 }
+
+header {
+  font-size: 75px;
+}
+
+/* Side nav styling ===================================================== */
 
 .nav-offcanvas {
   width: 300px;
@@ -80,8 +90,8 @@ p {
 
 .nav-offcanvas .close {
   position: absolute;
-  right: 10px;
-  top: 20px;
+  right: 20px;
+  top: 30px;
   outline: 0;
   opacity: 1;
   background: transparent;
@@ -91,12 +101,12 @@ p {
   transition: .3s ease;
 }
 .nav-offcanvas .close i {
-  font-size: 15px;
+  font-size: 20px;
   color:lightgrey;
   text-shadow: none;
 }
 .nav-offcanvas .close:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 .nav-offcanvas-menu ul {
   margin-bottom: 0;
@@ -143,6 +153,8 @@ p {
   visibility: visible;
 }
 
+/* Icon styling ===================================================== */
+
 div.icon {
   height: 100vh;
   display: flex;
@@ -160,16 +172,38 @@ i:hover {
   transform: scale(1.222);
 }
 
+/* Projects area styling ===================================================== */
+
 .projects {
   height: 100vh;
   display: flex;
   justify-content: center;
+
+  border-style: solid;
+  border-color: black;
+  border-width: 15px;
 }
 
-.main {
+
+/* Connect area styling ===================================================== */
+
+.connect {
   height: 100vh;
   display: flex;
   justify-content: center;
+
+  border-style: solid;
+  border-color: black;
+  border-width: 15px;
 }
 
 
+
+
+/* from content wrapper */
+  /* padding-top: 50px;
+  background-image: url("./assets/images/book-botanical-cactus-403571.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; */
