@@ -42,17 +42,4 @@ $(document).ready(function() {
     );
   });
 
- 
-
-  // const scrollTo = (where, speed) => {
-  //   const position = $(where).offset().top;
-
-  //   $("html,body").animate(
-  //     {
-  //       scrollTop: position
-  //     },
-  //     speed
-  //   );
-  // };
-
 });
