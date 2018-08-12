@@ -15,8 +15,8 @@ body {
   justify-content: center;
   position: fixed;
   width: 100%;
-  border-top: 15px solid black;
   border-right: 15px solid black;
+  background-color: black;
 }
 
 .hamburger {
@@ -24,7 +24,10 @@ body {
   position: fixed;
   left: 30px;
   font-size: 25px;
-  color: black;
+}
+
+.fa-bars {
+  color: white;
 }
 
 .hamburger i:hover {
@@ -33,7 +36,8 @@ body {
 }
 
 header {
-  font-size: 75px;
+  font-size: 50px;
+  color: white;
 }
 
 /* Side nav styling ===================================================== */
@@ -166,7 +170,7 @@ i:hover {
   height: 100vh;
   display: flex;
   justify-content: center;
-  padding-top: 125px;
+  padding-top: 100px;
 }
 
 /* Connect area styling ===================================================== */
@@ -175,19 +179,10 @@ i:hover {
   height: 100vh;
   display: flex;
   justify-content: center;
-  padding-top: 125px;
+  padding-top: 100px;
 }
 
-hr {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.75),
-    rgba(0, 0, 0, 0)
-  );
-}
+
 
 /* from content wrapper */
 /* padding-top: 50px;
