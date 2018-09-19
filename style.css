@@ -196,7 +196,13 @@ i:hover {
 .connect {
   height: 100vh;
   display: flex;
-  justify-content: center;
   padding-top: 100px;
+  flex-direction: column;
 }
+
+#connect-header {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
 
