@@ -2,9 +2,9 @@ body {
   font-family: "Dawning of a New Day", cursive;
   margin: 0;
   background-color: white;
-  border-left: 15px solid black;
-  border-right: 15px solid black;
-  border-bottom: 15px solid black;
+  border-left: 12px solid black;
+  border-right: 12px solid black;
+  border-bottom: 12px solid black;
 }
 
 /* Navbar and Hamburger styling ===================================================== */
@@ -122,27 +122,24 @@ header {
 
 /* About me page styling  ===================================================== */
 
-.content-wrapper {
+.main-content-wrapper {
   height: 100vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-top: 125px;
 }
 
-p {
+.about-me-P {
   font-size: 35px;
   color: black;
   font-family: "Handlee", cursive;
-}
-
-.about-me-P {
-  width: 50%;
+  width: 60%;
   font-size: 30px;
   padding: 50px;
 }
 
 .myPhoto {
-  height: 90vh;
+  height: 80vh;
 }
 
 /* Icon styling ===================================================== */
