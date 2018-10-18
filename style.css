@@ -36,9 +36,14 @@ body {
   transform: scale(1.25);
 }
 
-header {
+#header-link {
   font-size: 50px;
   color: white;
+}
+
+#header-link:hover{
+  color: white;
+  text-decoration: none;
 }
 
 .link-item {

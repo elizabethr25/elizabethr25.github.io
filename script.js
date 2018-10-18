@@ -43,10 +43,18 @@ $(document).ready(function() {
 
   // connect link scroll
   $("#connect-link").on("click", function() {
-    console.log("clicked");
     $("html,body").animate(
       {
         scrollTop: $(".connect").offset().top
+      },
+      "slow"
+    );
+  });
+
+  $("#header-link").on("click", function(){
+    $("html, body").animate(
+      {
+        scrollTop: $(".main-content-wrapper").offset().top
       },
       "slow"
     );
