@@ -31,6 +31,16 @@ $(document).ready(function() {
     );
   });
 
+  //resume link scroll 
+  $("#resume-link").on("click", function() {
+    $("html,body").animate(
+      {
+        scrollTop: $(".resume").offset().top
+      },
+      "slow"
+    );
+  });
+
   // connect link scroll
   $("#connect-link").on("click", function() {
     console.log("clicked");
