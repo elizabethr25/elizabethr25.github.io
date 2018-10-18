@@ -41,6 +41,10 @@ header {
   color: white;
 }
 
+.link-item {
+  font-size: 45px;
+}
+
 /* Side nav styling ===================================================== */
 
 .nav-offcanvas {
@@ -128,17 +132,19 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-top: 125px;
+  padding-top: 105px;
 }
 
 .about-me-left {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  width: 70%;
 }
 
 .about-me-P {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   font-size: 35px;
   color: black;
   font-family: "Handlee", cursive;
@@ -147,6 +153,16 @@ header {
   font-size: 30px;
   padding: 50px;
   text-align: center;
+}
+
+.pdf-button{
+  font-size: 30px;
+}
+
+.pdf-modal {
+  margin-left: 100px;
+  margin-bottom: 15px;
+  align-self: center;
 }
 
 .connect-icons {
@@ -166,10 +182,12 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 30%;
 }
 
 .myPhoto {
-  height: 80vh;
+  height: 75vh;
+  width: 350px;
 }
 /* Icon styling ===================================================== */
 
@@ -204,20 +222,26 @@ i:hover {
   padding-bottom: 15px;
 }
 
+.sec-head{
+  font-size: 45px;
+}
+
 .project-content {
   height: 100vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
 }
 
 .project-cards {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-around;
   height: 100%;
   font-family: "Handlee", cursive;
+  text-align: center;
 }
+
 
 /* Connect area styling ===================================================== */
 
