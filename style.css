@@ -242,6 +242,24 @@ i:hover {
   text-align: center;
 }
 
+/* Resume area styling ===================================================== */
+
+.resume{
+  height: 100vh;
+  display: flex;
+  padding-top: 100px;
+  flex-direction: column;
+}
+
+#resume-header{
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+#resumePDF{
+  align-self: center;
+}
+
 
 /* Connect area styling ===================================================== */
 
