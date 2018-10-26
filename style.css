@@ -2,8 +2,8 @@ body {
   font-family: "Dawning of a New Day", cursive;
   margin: 0;
   background-color: white;
-  border-left: 12px solid black;
-  border-right: 12px solid black;
+  /* border-left: 12px solid black;
+  border-right: 12px solid black; */
   border-bottom: 12px solid black;
 }
 
@@ -135,46 +135,24 @@ body {
 .main-content-wrapper {
   height: 100vh;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-flow: row wrap;
   padding-top: 105px;
-}
-
-.about-me-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 70%;
+  justify-content: space-around
 }
 
 .about-me-P {
-  display: flex;
-  flex-direction: column;
   font-size: 35px;
   color: black;
   font-family: "Handlee", cursive;
-  width: 80%;
-  height: 80%;
-  font-size: 30px;
-  padding: 50px;
+  width: 50%;
+  padding-left: 20px;
+  font-size: 25px;
   text-align: center;
-}
-
-.pdf-button{
-  font-size: 30px;
-}
-
-.pdf-modal {
-  margin-left: 100px;
-  margin-bottom: 15px;
-  align-self: center;
 }
 
 .connect-icons {
   height: 20%;
-  width: 80%;
-  display: flex;
-  flex-direction: row;
+  width: 100%;
   justify-content: space-evenly;
 }
 
@@ -183,17 +161,11 @@ body {
   font-size: 70px;
 }
 
-.about-me-right{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 30%;
-}
-
 .myPhoto {
   height: 75vh;
   width: 350px;
 }
+
 /* Icon styling ===================================================== */
 
 div.icon {
@@ -316,3 +288,21 @@ hr.styled {
 }
 
 
+
+/* @media only screen and (max-width: 600px){
+  body{
+    background-color: red;
+  }
+  .main-content-wrapper{
+    flex-direction: column;
+  } */
+/* 
+  .about-me-left {
+    width: 90%
+  }
+
+  .about-me-right{
+    width: 90%;
+  } */
+
+/* } */
