@@ -270,10 +270,6 @@ hr.styled {
 
 @media only screen and (max-width: 1055px){
 
-  body{
-    background-color: green;
-  }
-
   .hamburger {
     font-size: 1.2rem;
   }
