@@ -166,7 +166,7 @@ body {
   font-size: 4.3rem;
 }
 
-.myPhoto {
+#myPhoto {
   height: 75vh;
   width: 350px;
 }
@@ -193,10 +193,9 @@ i:hover {
 /* Projects area styling ===================================================== */
 
 .projects-wrapper {
-  height: 100vh;
   display: flex;
   flex-flow: row wrap;
-  /* padding-top: 84px; */
+  height: 100vh;
   flex-direction: column;
   justify-content: space-around;
 }
@@ -270,20 +269,30 @@ hr.styled {
   );
 }
 
-/* @media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px){
+
   body{
     background-color: red;
   }
-  .main-content-wrapper{
-    flex-direction: column;
-  } */
-/* 
-  .about-me-left {
-    width: 90%
+
+  .about-me-wrapper{
+    height: 100%;
   }
 
-  .about-me-right{
-    width: 90%;
-  } */
+  #myPhoto{
+    margin-top: 30px;
+  }
 
-/* } */
+  .projects-wrapper{
+    height: 100%;
+  }
+
+  .project-card-wrapper{
+    flex-direction: column;
+    flex-flow: wrap;
+  }
+
+  .project-card{
+    margin-top: 20px;
+  }
+}
