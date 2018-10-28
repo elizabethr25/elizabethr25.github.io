@@ -25,7 +25,7 @@ $(document).ready(function() {
   $("#project-link").on("click", function() {
     $("html,body").animate(
       {
-        scrollTop: $(".projects").offset().top
+        scrollTop: $(".projects-wrapper").offset().top
       },
       "slow"
     );
@@ -35,7 +35,7 @@ $(document).ready(function() {
   $("#resume-link").on("click", function() {
     $("html,body").animate(
       {
-        scrollTop: $(".resume").offset().top
+        scrollTop: $(".resume-wrapper").offset().top
       },
       "slow"
     );
@@ -45,7 +45,7 @@ $(document).ready(function() {
   $("#connect-link").on("click", function() {
     $("html,body").animate(
       {
-        scrollTop: $(".connect").offset().top
+        scrollTop: $(".connect-wrapper").offset().top
       },
       "slow"
     );
@@ -54,7 +54,7 @@ $(document).ready(function() {
   $("#header-link").on("click", function(){
     $("html, body").animate(
       {
-        scrollTop: $(".main-content-wrapper").offset().top
+        scrollTop: 0
       },
       "slow"
     );

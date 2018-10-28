@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
 
-    <!-- jquery cdn -->
+    <!-- jquery CDN -->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
 
+    <!-- bootstrap CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
@@ -23,9 +24,8 @@
         crossorigin="anonymous">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -36,8 +36,9 @@
 </head>
 
 <body>
-    <div class="nav">
-        <!-- Hamburger to pop open side nav -->
+
+    <!-- Hamburger to pop open side nav -->
+    <div class="nav nav-flex">
         <a id="offCanvas" class="hamburger">
             <i class="fas fa-bars"></i>
         </a>
@@ -91,23 +92,24 @@
     <div class="offcanvas-overlay"></div>
 
 
-    <!-- Main page content -->
-    <!-- change these classes to be main-content-wrapper, projects-content-wrapper, and connect-content-wrapper (see if they can all be the same class) -->
-    <div class="main-content-wrapper">
-        <!-- <div class="about-me-P"> -->
-        <div class="about-me-P">
-            Hi! My name is Elizabeth Richardson and I am a graduate of The University of Arizona with a
-            degree
-            in
-            Marketing, Class of 2014 and a graduate of The University of Arizona Full Stack Web Development
-            Coding
-            Bootcamp.
-            <br>
-            Languages and technologies that I have worked with include: HTML5/CSS3, JavaScript, jQuery,
-            Node.js, React.js, Express, Passport.js, Bootstrap, MySQL, MongoDB, Firebase, Heroku, and Git.
-            <br>
-            I am currently looking for full time developer positions! Please feel free to contact me with
-            any of the information below.
+    <!-- About me content -->
+    <div class="about-me-wrapper">
+        <div class="about-me-p">
+            <p>Hi! My name is Elizabeth Richardson and I am a graduate of The University of Arizona with a
+                degree
+                in
+                Marketing, Class of 2014 and a graduate of The University of Arizona Full Stack Web Development
+                Coding
+                Bootcamp.
+            </p>
+            <p>
+                Languages and technologies that I have worked with include: HTML5/CSS3, JavaScript, jQuery,
+                Node.js, React.js, Express, Passport.js, Bootstrap, MySQL, MongoDB, Firebase, Heroku, and Git.
+            </p>
+            <p>
+                I am currently looking for full time developer positions! Please feel free to contact me with
+                any of the information below.
+            </p>
             <div class="connect-icons">
                 <a target="_blank" href="https://www.linkedin.com/in/elizabethrichardson2/">
                     <i class="fab fa-linkedin"></i>
@@ -124,76 +126,66 @@
             </div>
         </div>
 
-        <img class="myPhoto" src="./assets/images/placeholder-me.jpg" alt="elizabeth richardson photo">
-        <!-- </div> -->
-        <!-- <div class="about-me-right"> -->
-        <!-- </div> -->
-
+        <img class="myPhoto" src="./assets/images/placeholder-me.jpg" alt="Elizabeth Richardson Photo">
     </div>
 
     <hr class="styled">
 
-    <!-- Project/ work experience area  -->
-    <div class="projects">
-        <h1 class="sec-head" id="projects-header">Projects</h1>
-        <div class="project-content">
+    <!-- Project content  -->
+    <div class="projects-wrapper">
+        <h1 class="section-header">Projects</h1>
 
-            <!-- project cards flex box -->
-            <div class="project-cards">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="./assets/images/video-bank-screenshot.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Video Resource Bank</h5>
-                        <p class="card-text">Central location for student resources and activity/homework video
-                            walkthroughs. <br> Built using MERN stack and Passport.js</p>
-                        <a href="https://github.com/elizabethr25/video-bank-react" class="btn btn-dark btn-sm">GitHub
-                            Repo</a>
-                        <a href="#" class="btn btn-dark btn-sm">Live Site</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="#" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">HVAC Website</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the
-                            bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-dark btn-sm">GitHub Repo</a>
-                        <a href="#" class="btn btn-dark btn-sm">Live Site</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="#" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">NFL-Crime Watch</h5>
-                        <p class="card-text">Team project working with API and AJAX calls. <br> Built using jQuery,
-                            AJAX, and CSS framework Materialize</p>
-                        <a href="#" class="btn btn-dark btn-sm">Go somewhere</a>
-                    </div>
+        <div class="project-card-wrapper">
+            <div class="card project-card">
+                <img class="card-img-top" src="./assets/images/video-bank-screenshot.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Student Resource Video Bank</h5>
+                    <p class="card-text">Central location for student resources and activity/homework video
+                        walkthroughs. <br> Built using MERN stack and Passport.js</p>
+                    <a href="https://github.com/elizabethr25/video-bank-react" class="btn btn-dark btn-sm">GitHub
+                        Repo</a>
+                    <a href="#" class="btn btn-dark btn-sm">Live Site</a>
                 </div>
             </div>
 
+            <div class="card project-card">
+                <img class="card-img-top" src="#" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">HVAC Website</h5>
+                    <p class="card-text project-card-description">Some quick example text to build on the card title and make up the
+                        bulk of
+                        the card's content.</p>
+                    <a href="#" class="btn btn-dark btn-sm">GitHub Repo</a>
+                    <a href="#" class="btn btn-dark btn-sm">Live Site</a>
+                </div>
+            </div>
 
+            <div class="card project-card">
+                <img class="card-img-top" src="#" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">NFL-Crime Watch</h5>
+                    <p class="card-text">Team project working with API and AJAX calls. <br> Built using jQuery,
+                        AJAX, and CSS framework Materialize</p>
+                    <a href="#" class="btn btn-dark btn-sm">Go somewhere</a>
+                </div>
+            </div>
         </div>
     </div>
 
     <hr class="styled">
 
-    <!-- Resume  -->
-    <div class="resume">
-        <h1 class="sec-head" id="resume-header">Resume</h1>
+    <!-- Resume content  -->
+    <div class="resume-wrapper">
+        <h1 class="section-header">Resume</h1>
 
         <iframe id="resumePDF" src="./assets/pdf/ElizabethRichardsonResume.pdf" width="50%" height="100%"></iframe>
     </div>
 
     <hr class="styled">
 
-    <!-- Connect with me area -->
-    <div class="connect">
-        <h1 class="sec-head" id="connect-header">Connect With Me</h1>
-        <div class="connect-content">
+    <!-- Connect with me content -->
+    <div class="connect-wrapper">
+        <h1 class="section-header">Connect With Me</h1>
             <div class="connect-form">
                 <form action="https://formspree.io/emrichardson820@gmail.com" method="POST">
                     <div class="form-group">
@@ -207,19 +199,12 @@
                     </div>
                     <div class="form-group">
                         <label for="text">Message</label>
-                        <input type="text" class="form-control" name="Message" id="text" placeholder="Message here">
+                        <textarea type="text" class="form-control" name="Message" id="text" placeholder="Enter your message here"></textarea>
                     </div>
                     <button type="submit" class="btn btn-dark">Submit</button>
                 </form>
             </div>
-
-
-
-        </div>
     </div>
-    </div>
-
-
 </body>
 
 <script src="./script.js"></script>
