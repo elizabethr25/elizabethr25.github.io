@@ -2,7 +2,6 @@ body {
   font-family: "Dawning of a New Day", cursive;
   background-color: white;
   font-size: 62.5%;
-  border-bottom: 12px solid black;
 }
 
 .section-header {
@@ -238,12 +237,14 @@ i:hover {
   height: 100vh;
   display: flex;
   padding-top: 100px;
+  padding-bottom: 3%;
   flex-direction: column;
 }
 
 .connect-form {
   align-self: center;
   width: 50%;
+  height: 90%;
 }
 
 #text {
@@ -256,6 +257,10 @@ label {
 
 .btn {
   font-size: 1.25rem;
+}
+
+#submitBtn {
+  margin-bottom: 50px;
 }
 
 /* HR styling */
@@ -271,20 +276,28 @@ hr.styled {
   );
 }
 
-/* @media only screen and (max-width: 600px){
+footer{
+  background-color:black;
+  height: 15px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+@media only screen and (max-width: 600px){
   body{
     background-color: red;
   }
-  .main-content-wrapper{
+  .about-me-wrapper{
     flex-direction: column;
-  } */
-/* 
+  } 
+ 
   .about-me-left {
     width: 90%
   }
 
   .about-me-right{
     width: 90%;
-  } */
-
-/* } */
+  } 
+}
