@@ -19,7 +19,6 @@ body {
   justify-content: center;
   position: fixed;
   width: 100%;
-  border-right: 15px solid black;
   background-color: black;
   z-index: 100;
 }
@@ -166,7 +165,7 @@ body {
   font-size: 4.3rem;
 }
 
-.myPhoto {
+#myPhoto {
   height: 75vh;
   width: 350px;
 }
@@ -193,10 +192,9 @@ i:hover {
 /* Projects area styling ===================================================== */
 
 .projects-wrapper {
-  height: 100vh;
   display: flex;
   flex-flow: row wrap;
-  /* padding-top: 84px; */
+  height: 100vh;
   flex-direction: column;
   justify-content: space-around;
 }
@@ -276,28 +274,34 @@ hr.styled {
   );
 }
 
-footer{
-  background-color:black;
-  height: 15px;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-}
+@media only screen and (max-width: 1055px){
 
-@media only screen and (max-width: 600px){
-  body{
-    background-color: red;
+  .hamburger {
+    font-size: 1.2rem;
   }
+
+  #header-link{
+    font-size: 2.5rem;
+  }
+
   .about-me-wrapper{
-    flex-direction: column;
-  } 
- 
-  .about-me-left {
-    width: 90%
+    height: 100%;
   }
 
-  .about-me-right{
-    width: 90%;
-  } 
+  #myPhoto{
+    margin-top: 30px;
+  }
+
+  .projects-wrapper{
+    height: 100%;
+  }
+
+  .project-card-wrapper{
+    flex-direction: column;
+    flex-flow: wrap;
+  }
+
+  .project-card{
+    margin-top: 20px;
+  }
 }
