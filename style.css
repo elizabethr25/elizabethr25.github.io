@@ -208,15 +208,19 @@ i:hover {
 
 .project-card{
   width: 22rem;
-  height: 25rem;
+  height: 28rem;
+}
+
+.card-text{
+  font-size: 1rem;
 }
 
 .project-card-description{
-  font-size: 1.5 rem;
+  font-size: 1.5rem;
 }
 
 #project-header{
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 /* Resume area styling ===================================================== */
