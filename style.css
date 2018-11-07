@@ -148,7 +148,7 @@ body {
   font-size: 1.5rem;
   font-family: "Raleway", sans-serif;
   color: black;
-  width: 60%;
+  width: 55%;
   height: 80%;
   text-align: center;
 }
@@ -166,8 +166,7 @@ body {
 }
 
 #myPhoto {
-  height: 75vh;
-  width: 350px;
+  width: 30%;
 }
 
 /* Icon styling ===================================================== */
